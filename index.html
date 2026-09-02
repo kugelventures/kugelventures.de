@@ -1,24 +1,53 @@
 <!DOCTYPE html>
-
-<head>
-  <title>kugel ventures</title>
-  <meta type="description" content="kugel ventures UG, Bielefeld & Berlin">
-  <link rel="dns-prefetch" href="//fonts.googleapis.com">
-  <link rel="preconnect" href="//fonts.googleapis.com">
-  <link rel="stylesheet" href="styles.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
-  <meta name="google-site-verification" content="6HzvTro363tF29NyoYkdU_Z_u9UrSk7518nCZ8ZzEks" />
-</head>
 <html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kugel ventures</title>
+<meta name="description" content="KUGEL VENTURES UG (haftungsbeschränkt) — investment, venture architecture and consultancy. We ideate, design, test and execute digital business. Bielefeld, Germany.">
+<link rel="canonical" href="https://kugelventures.de/">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* page can scroll now — the hero keeps its centred look */
+.Content{position:static!important;display:block!important;height:auto!important;top:auto!important;
+  left:auto!important;width:auto!important;margin:0!important}
+.Introduction{display:flex!important;align-items:center;justify-content:center;
+  min-height:100vh;min-height:100svh;padding:8vh 0 10vh}
+.StarField{position:fixed!important;z-index:0}
+.Page{position:relative;z-index:1}
 
+.Section{max-width:62em;margin:0 auto;padding:0 8vw 12vh}
+.Section-title{font-size:.75em;letter-spacing:.18em;text-transform:uppercase;opacity:.5;
+  font-weight:400;margin:0 0 2.2em;text-align:center}
+.Cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(15em,1fr));gap:1.2em}
+.Card{border:1px solid rgba(255,255,255,.16);border-radius:.9em;padding:1.6em 1.5em;
+  background:rgba(255,255,255,.025);backdrop-filter:blur(2px)}
+.Card h3{font-size:1em;font-weight:500;margin:0 0 .5em;letter-spacing:.01em}
+.Card p{font-size:.875em;line-height:1.6;opacity:.72;margin:0;font-weight:300}
+.Card--wide{grid-column:1/-1}
+.Card .kicker{font-size:.7em;letter-spacing:.16em;text-transform:uppercase;opacity:.45;margin:0 0 .9em}
+.Contact{text-align:center;font-size:.95em;line-height:1.9;font-weight:300}
+.Contact a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+.Contact a:hover{border-color:#fff}
+.Contact .name{display:block;margin-bottom:.6em;opacity:1}
+.Contact .muted{opacity:.72}
+.Legal{position:relative;z-index:1;text-align:center;padding:0 1em 4em;font-size:.8em;opacity:.55;line-height:1.9}
+.Legal a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
+.Legal a:hover{opacity:1}
+.Legal .sep{opacity:.4;padding:0 .5em}
+@media screen and (max-width:46em){.Section{padding-bottom:9vh}}
+</style>
+</head>
 <body>
+
+<div class="Page">
+
   <main class="Content">
     <section class="Introduction">
       <div class="Introduction-content">
         <h1 class="Logo">
-          <a href="/" title="Kugel Ventures">
-            <img src="img/logo.svg" alt="Kugel Ventures" style="height:200px;">
+          <a href="/" title="kugel ventures">
+            <img src="img/logo.svg" alt="kugel ventures" style="height:200px;">
           </a>
         </h1>
         <h2 class="Baseline">investment | venture architecture | consultancy</h2>
@@ -28,12 +57,58 @@
       </div>
     </section>
   </main>
-  <footer class="Footer">
-    <p class="Footer-content">kugel ventures UG, Bielefeld & Berlin &bull;
-      <a href="https://www.linkedin.com/in/kai-h-kuljurgis-738a0347/" target="_blank" class="Footer-link">Founder & CEO: Kai</a>
-    </p>
-  </footer>
-</body>
-<script src="main.js"></script>
 
+  <section class="Section" id="what">
+    <p class="Section-title">what we do</p>
+    <div class="Cards">
+      <div class="Card">
+        <h3>venture architecture</h3>
+        <p>We take an idea from a rough hypothesis to a validated concept — problem framing, product definition, prototyping and user research, ending in a specification a team can build from.</p>
+      </div>
+      <div class="Card">
+        <h3>product development</h3>
+        <p>We design and build digital products ourselves, or alongside the teams we work with — mobile apps, web products and the services behind them.</p>
+      </div>
+      <div class="Card">
+        <h3>investment</h3>
+        <p>We invest in and co-found early-stage digital companies, usually where we can contribute product and operational work rather than capital alone.</p>
+      </div>
+      <div class="Card">
+        <h3>consultancy</h3>
+        <p>We advise founders and companies on product strategy, digital business models, and how to get from an idea to something people actually use.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="Section" id="work">
+    <p class="Section-title">current work</p>
+    <div class="Cards">
+      <div class="Card Card--wide">
+        <p class="kicker">in development · ios</p>
+        <h3>Cooked</h3>
+        <p>A cooking app that turns the screenshots people already take — recipe reels, recipe pages, notes from a chat — into structured recipes in a personal cookbook, and keeps a record of what was actually cooked. Currently in development, with a public beta planned for 2026.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="Section" id="contact">
+    <p class="Section-title">contact</p>
+    <div class="Contact">
+      <span class="name">KUGEL VENTURES UG (haftungsbeschränkt)</span>
+      <span class="muted">Viktoriastrasse 34<br>33602 Bielefeld, Germany</span><br><br>
+      <a href="mailto:kk@kugelventures.de">kk@kugelventures.de</a><br>
+      <a href="tel:+4915152742527">0151 / 52742527</a>
+    </div>
+  </section>
+
+  <div class="Legal">
+    © 2026 KUGEL VENTURES UG (haftungsbeschränkt)
+    <span class="sep">•</span><a href="/impressum.html">Impressum</a>
+    <span class="sep">•</span><a href="/datenschutz.html">Datenschutz</a>
+  </div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
 </html>
